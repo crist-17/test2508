@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C_flex</title>
+    <link rel="stylesheet" href="./C_flex.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 왼쪽 세로 네비게이션 -->
+        <nav class="sidebar">
+            <div class="logo">
+                <h2>축제로고</h2>
+            </div>
+            <ul class="main-menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">축제소개</a>
+                    <ul class="submenu">
+                        <li><a href="#">축제개요</a></li>
+                        <li><a href="#">축제연혁</a></li>
+                        <li><a href="#">조직도</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">행사안내</a>
+                    <ul class="submenu">
+                        <li><a href="#">행사일정</a></li>
+                        <li><a href="#">행사장소</a></li>
+                        <li><a href="#">행사내용</a></li>
+                        <li><a href="#">참가방법</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">홍보마당</a>
+                    <ul class="submenu">
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">홍보영상</a></li>
+                        <li><a href="#">포토갤러리</a></li>
+                        <li><a href="#">SNS</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">참여마당</a>
+                    <ul class="submenu">
+                        <li><a href="#">참가신청</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                        <li><a href="#">문의사항</a></li>
+                        <li><a href="#">설문조사</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- 메인 콘텐츠 영역 -->
+        <div class="main-content">
+            <!-- 슬라이더 섹션 -->
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="https://via.placeholder.com/800x300/3498db/ffffff?text=축제+슬라이더+1" alt="축제 슬라이더 1">
+                    </div>
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/800x300/e74c3c/ffffff?text=축제+슬라이더+2" alt="축제 슬라이더 2">
+                    </div>
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/800x300/2ecc71/ffffff?text=축제+슬라이더+3" alt="축제 슬라이더 3">
+                    </div>
+                </div>
+                <button class="slider-btn prev">&#10094;</button>
+                <button class="slider-btn next">&#10095;</button>
+            </div>
+
+            <!-- 하단 콘텐츠 영역 -->
+            <div class="bottom-content">
+                <div class="notice-section">
+                    <h3>공지사항 (C.1)</h3>
+                    <ul>
+                        <li><a href="#">2024년 축제 일정 안내</a></li>
+                        <li><a href="#">참가신청 접수 시작</a></li>
+                        <li><a href="#">자원봉사자 모집</a></li>
+                        <li><a href="#">교통편 안내</a></li>
+                    </ul>
+                </div>
+                <div class="gallery-section">
+                    <h3>갤러리 (C.2)</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/150x100/9b59b6/ffffff?text=갤러리1" alt="갤러리 이미지 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/150x100/34495e/ffffff?text=갤러리2" alt="갤러리 이미지 2">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/150x100/f39c12/ffffff?text=갤러리3" alt="갤러리 이미지 3">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/150x100/1abc9c/ffffff?text=갤러리4" alt="갤러리 이미지 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="shortcut-section">
+                    <h3>바로가기 (C.3)</h3>
+                    <div class="shortcut-links">
+                        <a href="#" class="shortcut-link">참가신청</a>
+                        <a href="#" class="shortcut-link">행사일정</a>
+                        <a href="#" class="shortcut-link">오시는길</a>
+                        <a href="#" class="shortcut-link">문의사항</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 푸터 -->
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Copyright</h4>
+                        <p>&copy; 2024 축제위원회. All rights reserved.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>SNS</h4>
+                        <div class="sns-links">
+                            <a href="#">Facebook</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">YouTube</a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4>패밀리 사이트</h4>
+                        <div class="family-links">
+                            <a href="#">관광청</a>
+                            <a href="#">문화재청</a>
+                            <a href="#">지자체</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // 메뉴 토글 기능
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // 다른 메뉴 아이템들의 활성 상태 제거
+                document.querySelectorAll('.menu-item').forEach(otherItem => {
+                    if (otherItem !== this) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // 현재 메뉴 아이템 토글
+                this.classList.toggle('active');
+            });
+        });
+
+        // 슬라이더 기능
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+        nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+
+        // 자동 슬라이드
+        setInterval(() => showSlide(currentSlide + 1), 3000);
+    </script>
+</body>
+</html> 

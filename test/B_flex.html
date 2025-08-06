@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B_flex</title>
+
+    <link rel="stylesheet" href="./B_flex.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <h1>대한투어Flex</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">대한투어</a>
+                    <ul class="submenu">
+                        <li><a href="#intro">소개</a></li>
+                        <li><a href="#history">연혁</a></li>
+                        <li><a href="#location">위치</a></li>
+                        <li><a href="#contact">연락처</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#about">여행상품</a>
+                    <ul class="submenu">
+                        <li><a href="#domestic">국내여행</a></li>
+                        <li><a href="#overseas">해외여행</a></li>
+                        <li><a href="#package">패키지여행</a></li>
+                        <li><a href="#custom">맞춤여행</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#services">예약/문의</a>
+                    <ul class="submenu">
+                        <li><a href="#reservation">예약하기</a></li>
+                        <li><a href="#inquiry">문의하기</a></li>
+                        <li><a href="#mypage">마이페이지</a></li>
+                        <li><a href="#booking">예약확인</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#contact">고객센터</a>
+                    <ul class="submenu">
+                        <li><a href="#notice">공지사항</a></li>
+                        <li><a href="#faq">자주묻는질문</a></li>
+                        <li><a href="#review">여행후기</a></li>
+                        <li><a href="#support">고객지원</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 슬라이드 이미지 섹션 -->
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide active">
+                <img src="https://via.placeholder.com/1200x400/4A90E2/FFFFFF?text=대한투어+이미지1" alt="대한투어 이미지 1">
+                <div class="slide-content">
+                    <h2>대한투어에 오신 것을 환영합니다</h2>
+                    <p>최고의 여행 경험을 제공합니다</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/1200x400/7ED321/FFFFFF?text=여행+상품" alt="여행 상품">
+                <div class="slide-content">
+                    <h2>다양한 여행 상품</h2>
+                    <p>국내외 최고의 여행지를 만나보세요</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/1200x400/F5A623/FFFFFF?text=여행+경험" alt="여행 경험">
+                <div class="slide-content">
+                    <h2>특별한 여행 경험</h2>
+                    <p>평생 잊지 못할 추억을 만들어드립니다</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 슬라이드 네비게이션 -->
+        <div class="slider-nav">
+            <button class="prev-btn">&lt;</button>
+            <button class="next-btn">&gt;</button>
+        </div>
+        
+        <!-- 슬라이드 인디케이터 -->
+        <div class="slider-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
+    </div>
+
+    <div class="container">
+        <main>
+            <section>
+                <h2>메인 콘텐츠</h2>
+                <p>이곳은 메인 콘텐츠 영역입니다. flexbox를 사용하여 레이아웃을 구성했습니다.</p>
+            </section>
+
+            <section>
+                <h2>섹션 2</h2>
+                <p>두 번째 섹션입니다. 여러 섹션을 추가할 수 있습니다.</p>
+            </section>
+        </main>
+
+        <aside>
+            <h3>사이드바</h3>
+            <p>이곳은 사이드바 영역입니다. 부가 정보나 광고를 배치할 수 있습니다.</p>
+
+            <h4>최신 글</h4>
+            <ul>
+                <li><a href="#">글 제목 1</a></li>
+                <li><a href="#">글 제목 2</a></li>
+                <li><a href="#">글 제목 3</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>대한투어</h3>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#privacy">개인정보처리방침</a></li>
+                    <li><a href="#terms">이용약관</a></li>
+                    <li><a href="#sitemap">사이트맵</a></li>
+                    <li><a href="#contact">연락처</a></li>
+                </ul>
+                <p class="copyright">&copy; 2024 대한투어. All rights reserved.</p>
+            </div>
+            <div class="footer-sns">
+                <h4>SNS</h4>
+                <div class="sns-links">
+                    <a href="#" class="sns-link">Facebook</a>
+                    <a href="#" class="sns-link">Instagram</a>
+                    <a href="#" class="sns-link">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 슬라이드 기능
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+            
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            indicators[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        // 이벤트 리스너
+        prevBtn.addEventListener('click', prevSlide);
+        nextBtn.addEventListener('click', nextSlide);
+
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => showSlide(index));
+        });
+
+        // 자동 슬라이드
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+
+</html> 

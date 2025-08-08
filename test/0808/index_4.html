@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Car {
+            // 생성자를 통새서 오브젝트를 만드는거
+            // 생성자 함수를 사용하는 방식.클래스안에 함수 메소드
+            constructor(name) {
+                this.brand = name
+            }
+
+            present() {
+                return `${this.name}ㅇ으ㅡㅡ루`
+            }
+        }
+        const mycar = new Car("Ford")
+        const mycar1 = mycar.present()
+        document.writeln(mycar.brand)
+        document.writeln()
+
+    </script>
+</body>
+
+</html>

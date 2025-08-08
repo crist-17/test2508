@@ -1,17 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>리엑트 - 박창일</title>
+    <style>
+        .main {
+            background: url("./cat.jpg");
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 2px 2px rgb(216, 46, 3);
+            height: 230px;
+            width: 100%;
+            line-height: 100px;
+
+        }
+
+        #outer {
+            position: relative;
+            width: 900px;
+            height: 1100px;
+            margin: 50px auto;
+            padding: 50px;
+            border: 10px solid rgb(31, 3, 107);
+            border-style: outset;
+            border-collapse: separate;
+            background-color: rgb(192, 238, 105);
+        }
+
+        .wrapper {
+            position: relative;
+        }
+
+        .container {
+            position: absolute;
+            background-color: rgb(124, 196, 224);
+            border: 1px solid rgb(16, 16, 17);
+            border-radius: 25px;
+            box-shadow: 3px 3px 10px blue;
+            text-align: center;
+            width: 170px;
+            padding: 10px;
+            background: linear-gradient(to right bottom, rgb(78, 170, 231), white);
+            height: 150px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 10px 10px 30px rgb(247, 2, 2);
+        }
+
+        .container p {
+            margin-top: 0;
+            margin-bottom: 20px;
+
+        }
+
+        .container a {
+            color: green;
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 1.2;
+            text-shadow: 1px 1px black;
+
+            display: inline-block;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .container a:hover {
+            color: aliceblue;
+            font-size: 24px;
+            cursor: pointer;
+
+            transform: scale(1.1);
+            color: rgb(230, 197, 10);
+        }
+
+        #aug_7 {
+            position: absolute;
+            z-index: 1;
+        }
+
+        #aug_7:hover {
+
+            height: 300px;
+            z-index: 10;
+            color: red;
+        }
+
+        #aug_8 {
+            position: absolute;
+            z-index: 1;
+        }
+
+        #aug_8:hover {
+
+            height: 300px;
+            z-index: 10;
+            color: red;
+        }
+
+
+        /* =========================================== */
+        .container:nth-child(4n+1) {
+            left: 0;
+        }
+
+        .container:nth-child(4n+2) {
+            left: 220px;
+        }
+
+        /* gap 50px 포함 */
+        .container:nth-child(4n+3) {
+            left: 440px;
+        }
+
+        .container:nth-child(4n+4) {
+            left: 660px;
+        }
+
+        #agu_1 {
+            background: linear-gradient(to right bottom, rgb(240, 236, 4), white);
+        }
+    </style>
 </head>
+
 <body>
-    <h1>test</h1>
-    <a href="./test/A_flex.html">a_flex</a><br>
-     <a href="./test/A_float.html">a_float</a><br>
-      <a href="./test/A_grid.html">a_grid</a><br>
-       <a href="./test/B_flex.html">b_flex</a><br>
-        <a href="./test/B_float.html">b_float</a><br>
-         <a href="./test/B_grid.html">b_grid</a>
+
+
+    <h1 class="main" style="color: rgb(101, 167, 224);">Java Script 과제올리기</h1>
+
+    <div id="outer">
+        <div class="wrapper">
+
+            <div class="container" id="aug_7">
+                <h2>day01_0807</h2><br>
+                <p> <a href="./test/A_flex.html">a_flex</a><br>
+                    <a href="./test/A_float.html">a_float</a><br>
+                    <a href="./test/A_grid.html">a_grid</a><br>
+                    <a href="./test/B_flex.html">b_flex</a><br>
+                    <a href="./test/B_float.html">b_float</a><br>
+                    <a href="./test/B_grid.html">b_grid</a>
+                </p>
+            </div>
+
+            <div class="container" id="aug_8">
+                <h2>day02_0808</h2><br>
+                <p><a href="./test/0808/index_2.html">컴포넌트</a>
+                    <br><a href="./test/0808/index_4.html">클라스</a>
+                     <br><a href="./test/0808/index_extend.html">상속</a>
+                      <br><a href="./test/0808/index_react.html">웹링크랜딩</a>
+                </p>
+            </div>
+            <div class="container">
+                <h2>day03_0811</h2><br>
+                <p><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                    <br><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                </p>
+            </div>
+            <div class="container">
+                <h2>day04_0812</h2><br>
+                <p><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                    <br><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                </p>
+            </div>
+            <div class="container">
+                <h2>day05_0813</h2><br>
+                <p><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                    <br><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                </p>
+            </div>
+            <div class="container">
+                <h2>day06_0814</h2><br>
+                <p><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                    <br><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                </p>
+            </div>
+            <div class="container">
+                <h2>day07_0815</h2><br>
+                <p><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                    <br><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                </p>
+            </div>
+            <div class="container">
+                <h2>day08_0818</h2><br>
+                <p><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                    <br><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                </p>
+            </div>
+            <div class="container">
+                <h2>day09_0819</h2><br>
+                <p><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                    <br><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                </p>
+            </div>
+
+            <div class="container">
+                <h2>day10_0820</h2><br>
+                <p><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                    <br><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                </p>
+            </div>
+            <div class="container">
+                <h2>day11_0821</h2><br>
+                <p><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                    <br><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                </p>
+            </div>
+            <div class="container">
+                <h2>day12_0822</h2><br>
+                <p><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                    <br><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                </p>
+            </div>
+            <div class="container">
+                <h2>day13_0825</h2><br>
+                <p><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                    <br><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                </p>
+            </div>
+            <div class="container">
+                <h2>day14_0826</h2><br>
+                <p><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                    <br><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                </p>
+            </div>
+            <div class="container">
+                <h2>day15_0827</h2><br>
+                <p><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                    <br><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                </p>
+            </div>
+            <div class="container">
+                <h2>day16_0828</h2><br>
+                <p><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                    <br><a href="#" onclick="alert('아직준비중입니다.기다려주세요')">대기중</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </table>
+    <script>
+        const containers = document.querySelectorAll('.container');
+        const boxHeight = 150; // 박스 높이
+        const gap = 50;        // 줄 간격
+        const perRow = 4;      // 한 줄에 몇 개
+
+        containers.forEach((box, index) => {
+            // 몇 번째 행인지 계산 (0행부터 시작)
+            const row = Math.floor(index / perRow);
+
+            // top 좌표 = 박스 높이 + gap * 행번호
+            box.style.top = `${row * (boxHeight + gap)}px`;
+        });
+    </script>
 </body>
+
+
 </html>

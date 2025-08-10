@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>꼬부기</title>
+  <style>
+    .box {
+      width: 300px;
+  height: 300px;      
+  background-image: url('./꼬부기.gif'); 
+  background-size: cover;                 
+  background-position: center;
+  
+  
+  animation-name: slideAndFlip;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 50%;
+    }
+
+   @keyframes slideAndFlip {
+  0% {
+    transform: translateX(0) scaleX(-1);  
+  }
+  50% {
+    transform: translateX(300px) scaleX(-1);
+  }
+  51% {
+    transform: translateX(300px) scaleX(1);
+  }
+  100% {
+    transform: translateX(0) scaleX(1);  
+  }
+}
+  </style>
+</head>
+
+<body>
+	<div class="box">	</div>
+</body>
+</html>

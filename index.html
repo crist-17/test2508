@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>리엑트 - 박창일</title>
+    <link rel="stylesheet" href="./index.css">
     <style>
         .main {
             background: url("./cat.jpg");
@@ -14,6 +15,7 @@
             height: 230px;
             width: 100%;
             line-height: 100px;
+            margin-bottom: 0; 
 
         }
 
@@ -31,6 +33,8 @@
 
         .wrapper {
             position: relative;
+             width: 860px;  /* 컨테이너 전체 폭 + 간격 계산 */
+    margin: 0 auto;
         }
 
         .container {
@@ -132,8 +136,47 @@
 <body>
 
 
-    <h1 class="main" style="color: rgb(101, 167, 224);">Java Script 과제올리기</h1>
-
+    <h1 class="main" style="color: rgb(101, 167, 224);">React 과제올리기</h1>
+<nav>
+    <ul class="navi">
+        <li>
+            <a href="#">🐶강아지</a>
+            <ul class="subnavi">
+                <li><a href="./dog.html"><i>말티즈</i></a></li>
+                <li><a href="./dog.html">똥개</a></li>
+                <li><a href="./dog.html">리트리버</a></li>
+                <li><a href="./dog.html">허스키</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">🐱고양이</a>
+            <ul class="subnavi">
+                <li><a href="./cat.html">길냥이</a></li>
+                <li><a href="./cat.html">페르시안</a></li>
+                <li><a href="./cat.html">스핑크스</a></li>
+                <li><a href="./cat.html">벵갈</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">⚡포켓몬</a>
+            <ul class="subnavi">
+                <li><a href="./pica.html">피카츄</a></li>
+                <li><a href="./pairy.html">파이리</a></li>
+                <li><a href="./ggobugi.html">꼬부기</a></li>
+                <li><a href="#">이상해씨</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">🦖디지몬</a>
+            <ul class="subnavi">
+                <li><a href="#">아구몬</a></li>
+                <li><a href="#">에테몬</a></li>
+                <li><a href="#">그레이몬</a></li>
+                <li><a href="#">파피몬</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
     <div id="outer">
         <div class="wrapper">
 
